@@ -33,3 +33,6 @@ contract GuessTheMagicWord {
         return keccak256(abi.encodePacked(_word)) == answer;
     }
 }
+
+1.abi.encodePacked
+2.abi.encode
