@@ -48,3 +48,11 @@ contract GasGolf {
         return i;
     }
 }
+
+
+Some gas saving techniques.
+    Replacing memory with calldata
+    Loading state variable to memory
+    Replace for loop i++ with ++i
+    Caching array elements
+    Short circuit
