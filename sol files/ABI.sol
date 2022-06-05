@@ -27,6 +27,13 @@ contract AbiDecode {
         )
     {
         // (uint x, address addr, uint[] memory arr, MyStruct myStruct) = ...
-        (x, addr, arr, myStruct) = abi.decode(data, (uint, address, uint[], MyStruct));
+        (x, addr, arr, myStruct) = abi.decode(
+            data,
+            (uint, address, uint[], MyStruct)
+        );
     }
 }
+
+// abi.encode encodes data into bytes.
+
+// abi.decode decodes bytes back into data.
