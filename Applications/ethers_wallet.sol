@@ -14,7 +14,9 @@ contract EtherWallet {
 
     function withdraw(uint _amount) external {
         require(msg.sender == owner, "caller is not owner");
+        // can use require statement or modifier
         payable(msg.sender).transfer(_amount);
+        // to transfer ether call,transfer, send functions can be called
     }
 
     function getBalance() external view returns (uint) {
