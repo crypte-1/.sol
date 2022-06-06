@@ -9,7 +9,7 @@ contract MyToken is ERC20 {
         //function decimals() public view virtual returns (uint8) {
         //    return 18;
         //  }
-        
+        //_mint() is a _internal function_
         _mint(msg.sender, 100 * 10**uint(decimals()));
     }
 }
