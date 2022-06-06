@@ -5,10 +5,12 @@ contract EtherWallet {
     address payable public owner;
 
     constructor() {
-        owner = payable(msg.sender);
+        owner = payable(msg.sender); // making msg.sender address payable
     }
 
     receive() external payable {}
+
+    // receive or fallback secial function are  to receive ether sent to current smart contract
 
     function withdraw(uint _amount) external {
         require(msg.sender == owner, "caller is not owner");
